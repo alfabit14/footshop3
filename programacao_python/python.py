@@ -1,0 +1,15 @@
+palavras = ["portugues", "historia", "ciencias", "geografia", "matematica"]
+
+print (palavras)
+print (len (palavras))
+print (palavras [3])
+palavras [0] = ("artes")
+print (palavras)
+palavras.pop (1)
+print (palavras)
+palavras.append ("fisica")
+print (palavras)
+palavras.insert (2,"redação")
+print (palavras)
+palavras.remove ("geografia")
+print (palavras)
