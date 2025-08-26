@@ -25,5 +25,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
     window.onresize = updateCarousel;
     updateCarousel();
 
+    const sneakerslink = document.getElementById('sneakers-link');
+    const submenucontainer = document.getElementById('submenu-container')
+    const submenu = document.getElementById('submenu')
 
+    sneakerslink.addEventListener('click',(e)=>{
+        e.preventDefault();
+        submenucontainer.style.display = 'flex';
+    });
+
+    submenucontainer.addEventListener('click',(e)=>{
+        if(!submenu.contains(e.target)){
+            submenucontainer.style.display = 'none';
+        }
+    });
+
+    
 });
